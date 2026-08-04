@@ -6,5 +6,6 @@ st.header(f"• ภาษีมูลค่าเพิ่ม (VAT 7%): **{vat:.
 import streamlit as st
 price = st.number_input("กรอกราคาสินค้า (บาท):", value=0.0)
 net_price = price - vat
+st.divider()
 st.write("นายกันตภัชญ์ จองเซ เลขที่ 13  ม.4/12")
 st.header(f"• ราคาสุทธิ: {net_price:.2f} บาท")
